@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Product Management</h1>
+    <div id="product-list">
+      <h2>Product List</h2>
+      <ul id="product-list-items">
+        <!-- Product items will be dynamically added here -->
+      </ul>
+    </div>
+
+    <div id="add-product">
+      <h2>Add Product</h2>
+      <form id="add-product-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" required />
+
+        <label for="featured">Featured:</label>
+        <input type="checkbox" id="featured" />
+
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" step="0.01" />
+
+        <label for="createdAt">Created At:</label>
+        <input type="date" id="createdAt" required />
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" required />
+
+        <button type="submit">Add</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
